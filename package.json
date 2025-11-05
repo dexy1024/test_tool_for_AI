@@ -1,0 +1,22 @@
+{
+  "name": "image-recognition-test",
+  "version": "1.0.0",
+  "description": "图像识别系统后台测试功能",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "npm run build && echo '构建完成，请将 dist 文件夹内容部署到 GitHub Pages'"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.1.0",
+    "element-plus": "^2.3.8",
+    "vue": "^3.3.4",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.2.3",
+    "vite": "^4.4.5"
+  }
+}
