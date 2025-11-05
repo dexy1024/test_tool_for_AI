@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && node scripts/fix-assets-path.js",
     "preview": "vite preview",
     "deploy": "npm run build && echo '构建完成，请将 dist 文件夹内容部署到 GitHub Pages'"
   },
