@@ -12,15 +12,11 @@ export default defineConfig({
   build: {
     // GitHub Pages 部署路径：/test_tool_for_AI/
     base: '/test_tool_for_AI/',
-    // 优化构建输出
+    // 禁用代码分割，避免模块加载顺序问题
     rollupOptions: {
       output: {
-        // 手动分割代码块，减少单个文件大小
-        manualChunks: {
-          'element-plus': ['element-plus'],
-          'vue': ['vue'],
-          'xlsx': ['xlsx']
-        }
+        // 将所有代码打包到一个文件中，避免模块加载顺序问题
+        manualChunks: undefined
       }
     }
   }
